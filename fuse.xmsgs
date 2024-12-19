@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/xilinx_workspace/project/led_ctrl.v" Line 67: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">25</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/xilinx_workspace/project/top.v" Line 70: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/xilinx_workspace/project/top.v" Line 76: Port <arg fmt="%s" index="1">BUZZER</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/xilinx_workspace/project/top.v" Line 102: Port <arg fmt="%s" index="1">GAME_START</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/xilinx_workspace/project/top.v" Line 110: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">LAST_CLEAR_TIME</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/xilinx_workspace/project/top.v" Line 121: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">LAST_CLEAR_TIME</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: ￁￶￁ﾤﾵ￈ ﾰ￦ﾷￎﾸﾦ ￃﾣ￀ﾻ ﾼ￶ ﾾ￸ﾽ￀ﾴￏﾴ￙, &quot;isim\top_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+</msg>
+
+</messages>
+

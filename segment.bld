@@ -1,0 +1,604 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p
+xc6slx16-ftg256-2 segment.ngc segment.ngd
+
+Reading NGO file "C:/xilinx_workspace/project/segment.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "clock_12MHz" LOC = T8;>
+   [top.ucf(3)]: NET "clock_12MHz" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clock_12MHz" LOC = T8;> [top.ucf(3)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[8]" LOC = "L4";> [top.ucf(10)]:
+   NET "KEY[8]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[8]" LOC = "L4";> [top.ucf(10)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[7]" LOC = "H3";> [top.ucf(11)]:
+   NET "KEY[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[7]" LOC = "H3";> [top.ucf(11)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[6]" LOC = "H4";> [top.ucf(12)]:
+   NET "KEY[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[6]" LOC = "H4";> [top.ucf(12)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[5]" LOC = "H5";> [top.ucf(13)]:
+   NET "KEY[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[5]" LOC = "H5";> [top.ucf(13)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[4]" LOC = "J6";> [top.ucf(14)]:
+   NET "KEY[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[4]" LOC = "J6";> [top.ucf(14)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[3]" LOC = "J4";> [top.ucf(15)]:
+   NET "KEY[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[3]" LOC = "J4";> [top.ucf(15)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[2]" LOC = "K3";> [top.ucf(16)]:
+   NET "KEY[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[2]" LOC = "K3";> [top.ucf(16)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[1]" LOC = "F1";> [top.ucf(17)]:
+   NET "KEY[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[1]" LOC = "F1";> [top.ucf(17)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "KEY[0]" LOC = "F2";> [top.ucf(18)]:
+   NET "KEY[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "KEY[0]" LOC = "F2";> [top.ucf(18)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[7]" LOC = A4;> [top.ucf(25)]:
+   NET "LED[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[7]" LOC = A4;> [top.ucf(25)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[6]" LOC = B5;> [top.ucf(26)]:
+   NET "LED[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[6]" LOC = B5;> [top.ucf(26)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[5]" LOC = A5;> [top.ucf(27)]:
+   NET "LED[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[5]" LOC = A5;> [top.ucf(27)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[4]" LOC = D5;> [top.ucf(28)]:
+   NET "LED[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[4]" LOC = D5;> [top.ucf(28)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[3]" LOC = C5;> [top.ucf(29)]:
+   NET "LED[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[3]" LOC = C5;> [top.ucf(29)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[2]" LOC = B6;> [top.ucf(30)]:
+   NET "LED[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[2]" LOC = B6;> [top.ucf(30)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[1]" LOC = A6;> [top.ucf(31)]:
+   NET "LED[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[1]" LOC = A6;> [top.ucf(31)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED[0]" LOC = F7;> [top.ucf(32)]:
+   NET "LED[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED[0]" LOC = F7;> [top.ucf(32)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Mode_Switch" LOC = R9;>
+   [top.ucf(35)]: NET "Mode_Switch" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Mode_Switch" LOC = R9;> [top.ucf(35)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[9]" LOC = "M2";>
+   [top.ucf(41)]: NET "DOT_COL[9]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[9]" LOC = "M2";> [top.ucf(41)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[8]" LOC = "M1";>
+   [top.ucf(42)]: NET "DOT_COL[8]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[8]" LOC = "M1";> [top.ucf(42)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[7]" LOC = "L3";>
+   [top.ucf(43)]: NET "DOT_COL[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[7]" LOC = "L3";> [top.ucf(43)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[6]" LOC = "L1";>
+   [top.ucf(44)]: NET "DOT_COL[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[6]" LOC = "L1";> [top.ucf(44)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[5]" LOC = "K2";>
+   [top.ucf(45)]: NET "DOT_COL[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[5]" LOC = "K2";> [top.ucf(45)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[4]" LOC = "R15";>
+   [top.ucf(46)]: NET "DOT_COL[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[4]" LOC = "R15";> [top.ucf(46)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[3]" LOC = "R16";>
+   [top.ucf(47)]: NET "DOT_COL[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[3]" LOC = "R16";> [top.ucf(47)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[2]" LOC = "R14";>
+   [top.ucf(48)]: NET "DOT_COL[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[2]" LOC = "R14";> [top.ucf(48)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[1]" LOC = "T15";>
+   [top.ucf(49)]: NET "DOT_COL[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[1]" LOC = "T15";> [top.ucf(49)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_COL[0]" LOC = "T14";>
+   [top.ucf(50)]: NET "DOT_COL[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_COL[0]" LOC = "T14";> [top.ucf(50)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[13]" LOC = "N4";>
+   [top.ucf(52)]: NET "DOT_RAW[13]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[13]" LOC = "N4";> [top.ucf(52)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[12]" LOC = "R2";>
+   [top.ucf(53)]: NET "DOT_RAW[12]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[12]" LOC = "R2";> [top.ucf(53)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[11]" LOC = "R1";>
+   [top.ucf(54)]: NET "DOT_RAW[11]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[11]" LOC = "R1";> [top.ucf(54)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[10]" LOC = "P2";>
+   [top.ucf(55)]: NET "DOT_RAW[10]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[10]" LOC = "P2";> [top.ucf(55)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[9]" LOC = "P1";>
+   [top.ucf(56)]: NET "DOT_RAW[9]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[9]" LOC = "P1";> [top.ucf(56)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[8]" LOC = "N3";>
+   [top.ucf(57)]: NET "DOT_RAW[8]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[8]" LOC = "N3";> [top.ucf(57)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[7]" LOC = "N1";>
+   [top.ucf(58)]: NET "DOT_RAW[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[7]" LOC = "N1";> [top.ucf(58)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[6]" LOC = "N16";>
+   [top.ucf(59)]: NET "DOT_RAW[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[6]" LOC = "N16";> [top.ucf(59)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[5]" LOC = "M15";>
+   [top.ucf(60)]: NET "DOT_RAW[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[5]" LOC = "M15";> [top.ucf(60)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[4]" LOC = "M16";>
+   [top.ucf(61)]: NET "DOT_RAW[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[4]" LOC = "M16";> [top.ucf(61)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[3]" LOC = "L14";>
+   [top.ucf(62)]: NET "DOT_RAW[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[3]" LOC = "L14";> [top.ucf(62)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[2]" LOC = "L16";>
+   [top.ucf(63)]: NET "DOT_RAW[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[2]" LOC = "L16";> [top.ucf(63)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[1]" LOC = "P15";>
+   [top.ucf(64)]: NET "DOT_RAW[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[1]" LOC = "P15";> [top.ucf(64)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DOT_RAW[0]" LOC = "P16";>
+   [top.ucf(65)]: NET "DOT_RAW[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DOT_RAW[0]" LOC = "P16";> [top.ucf(65)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_RS" LOC = "N6";> [top.ucf(92)]:
+   NET "LCD_RS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_RS" LOC = "N6";> [top.ucf(92)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_RW" LOC = "T4";> [top.ucf(93)]:
+   NET "LCD_RW" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_RW" LOC = "T4";> [top.ucf(93)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_EN" LOC = "M6";> [top.ucf(94)]:
+   NET "LCD_EN" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_EN" LOC = "M6";> [top.ucf(94)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[0]" LOC = "T6";>
+   [top.ucf(95)]: NET "LCD_DATA[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[0]" LOC = "T6";> [top.ucf(95)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[1]" LOC = "R5";>
+   [top.ucf(96)]: NET "LCD_DATA[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[1]" LOC = "R5";> [top.ucf(96)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[2]" LOC = "T5";>
+   [top.ucf(97)]: NET "LCD_DATA[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[2]" LOC = "T5";> [top.ucf(97)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[3]" LOC = "N5";>
+   [top.ucf(98)]: NET "LCD_DATA[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[3]" LOC = "N5";> [top.ucf(98)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[4]" LOC = "P5";>
+   [top.ucf(99)]: NET "LCD_DATA[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[4]" LOC = "P5";> [top.ucf(99)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[5]" LOC = "L8";>
+   [top.ucf(100)]: NET "LCD_DATA[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[5]" LOC = "L8";> [top.ucf(100)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[6]" LOC = "L7";>
+   [top.ucf(101)]: NET "LCD_DATA[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[6]" LOC = "L7";> [top.ucf(101)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LCD_DATA[7]" LOC = "P4";>
+   [top.ucf(102)]: NET "LCD_DATA[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LCD_DATA[7]" LOC = "P4";> [top.ucf(102)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BUZZER" LOC = D12;> [top.ucf(108)]:
+   NET "BUZZER" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUZZER" LOC = D12;> [top.ucf(108)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MOTOR_OUT[0]" LOC = "J1";>
+   [top.ucf(114)]: NET "MOTOR_OUT[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MOTOR_OUT[0]" LOC = "J1";> [top.ucf(114)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MOTOR_OUT[1]" LOC = "H2";>
+   [top.ucf(115)]: NET "MOTOR_OUT[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MOTOR_OUT[1]" LOC = "H2";> [top.ucf(115)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MOTOR_OUT[2]" LOC = "H1";>
+   [top.ucf(116)]: NET "MOTOR_OUT[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MOTOR_OUT[2]" LOC = "H1";> [top.ucf(116)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MOTOR_OUT[3]" LOC = "G3";>
+   [top.ucf(117)]: NET "MOTOR_OUT[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MOTOR_OUT[3]" LOC = "G3";> [top.ucf(117)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "easy" LOC = "E11";> [top.ucf(123)]:
+   NET "easy" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "easy" LOC = "E11";> [top.ucf(123)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "normal" LOC = "B14";>
+   [top.ucf(124)]: NET "normal" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "normal" LOC = "B14";> [top.ucf(124)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hard" LOC = "A14";> [top.ucf(125)]:
+   NET "hard" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "hard" LOC = "A14";> [top.ucf(125)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vhard" LOC = "D11";>
+   [top.ucf(126)]: NET "vhard" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vhard" LOC = "D11";> [top.ucf(126)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    63
+  Number of warnings:  63
+
+Total memory usage is 4398112 kilobytes
+
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "segment.bld"...

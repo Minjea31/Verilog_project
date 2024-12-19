@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\xilinx_workspace\project\top.ncd
+OUTFILE=C:\xilinx_workspace\project\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=C:\xilinx_workspace\project
+LICENSE=WebPack
+USER_INFO=213165629_0_0_511

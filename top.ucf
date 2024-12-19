@@ -1,0 +1,126 @@
+
+# PlanAhead Generated physical constraints 
+NET "clock_12MHz" LOC = T8;
+NET "RESET" LOC = F10;
+
+
+###########################################
+### KEY
+###########################################
+NET "KEY[8]" LOC = "L4";
+NET "KEY[7]" LOC = "H3";
+NET "KEY[6]" LOC = "H4";
+NET "KEY[5]" LOC = "H5";
+NET "KEY[4]" LOC = "J6";
+NET "KEY[3]" LOC = "J4";
+NET "KEY[2]" LOC = "K3";
+NET "KEY[1]" LOC = "F1";
+NET "KEY[0]" LOC = "F2";
+
+
+
+###########################################
+### LED
+###########################################
+NET "LED[7]" LOC = A4;
+NET "LED[6]" LOC = B5;
+NET "LED[5]" LOC = A5;
+NET "LED[4]" LOC = D5;
+NET "LED[3]" LOC = C5;
+NET "LED[2]" LOC = B6;
+NET "LED[1]" LOC = A6;
+NET "LED[0]" LOC = F7;
+
+//모드 스위치
+NET "Mode_Switch" LOC = R9;
+
+
+###########################################
+### DOTMATRIX
+###########################################
+NET "DOT_COL[9]" LOC = "M2";
+NET "DOT_COL[8]" LOC = "M1";
+NET "DOT_COL[7]" LOC = "L3";
+NET "DOT_COL[6]" LOC = "L1";
+NET "DOT_COL[5]" LOC = "K2";
+NET "DOT_COL[4]" LOC = "R15";
+NET "DOT_COL[3]" LOC = "R16";
+NET "DOT_COL[2]" LOC = "R14";
+NET "DOT_COL[1]" LOC = "T15";
+NET "DOT_COL[0]" LOC = "T14";
+
+NET "DOT_RAW[13]" LOC = "N4";
+NET "DOT_RAW[12]" LOC = "R2";
+NET "DOT_RAW[11]" LOC = "R1";
+NET "DOT_RAW[10]" LOC = "P2";
+NET "DOT_RAW[9]" LOC = "P1";
+NET "DOT_RAW[8]" LOC = "N3";
+NET "DOT_RAW[7]" LOC = "N1";
+NET "DOT_RAW[6]" LOC = "N16";
+NET "DOT_RAW[5]" LOC = "M15";
+NET "DOT_RAW[4]" LOC = "M16";
+NET "DOT_RAW[3]" LOC = "L14";
+NET "DOT_RAW[2]" LOC = "L16";
+NET "DOT_RAW[1]" LOC = "P15";
+NET "DOT_RAW[0]" LOC = "P16";
+
+
+###########################################
+### FND_COM
+###########################################
+NET "FND_COM[3]" LOC = "A9";
+NET "FND_COM[2]" LOC = "B10";
+NET "FND_COM[1]" LOC = "A10";
+NET "FND_COM[0]" LOC = "E7";
+
+###########################################
+### FND_DATA
+###########################################
+NET "FND_DATA[7]" LOC = "E6";
+NET "FND_DATA[6]" LOC = "C7";
+NET "FND_DATA[5]" LOC = "A7";
+NET "FND_DATA[4]" LOC = "D6";
+NET "FND_DATA[3]" LOC = "C6";
+NET "FND_DATA[2]" LOC = "B8";
+NET "FND_DATA[1]" LOC = "A8";
+NET "FND_DATA[0]" LOC = "C9";
+
+
+###########################################
+### TEXTLCD
+###########################################
+NET "LCD_RS" LOC = "N6";
+NET "LCD_RW" LOC = "T4";
+NET "LCD_EN" LOC = "M6";
+NET "LCD_DATA[0]" LOC = "T6";
+NET "LCD_DATA[1]" LOC = "R5";
+NET "LCD_DATA[2]" LOC = "T5";
+NET "LCD_DATA[3]" LOC = "N5";
+NET "LCD_DATA[4]" LOC = "P5";
+NET "LCD_DATA[5]" LOC = "L8";
+NET "LCD_DATA[6]" LOC = "L7";
+NET "LCD_DATA[7]" LOC = "P4";
+
+
+###########################################
+### BUZZER
+###########################################
+NET "BUZZER" LOC = D12;
+
+
+###########################################
+### STEPMOTOR
+###########################################
+NET "MOTOR_OUT[0]" LOC = "J1";
+NET "MOTOR_OUT[1]" LOC = "H2";
+NET "MOTOR_OUT[2]" LOC = "H1";
+NET "MOTOR_OUT[3]" LOC = "G3";
+
+
+###########################################
+### 난이도 제어 버튼
+###########################################
+NET "easy" LOC = "E11";
+NET "normal" LOC = "B14";
+NET "hard" LOC = "A14";
+NET "vhard" LOC = "D11";

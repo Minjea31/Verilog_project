@@ -1,0 +1,47 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/xilinx_workspace/project/top_isim_beh.exe -prj C:/xilinx_workspace/project/top_beh.prj work.top work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/xilinx_workspace/project/ipcore_dir/PLL24X2.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/bin2seg.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/textlcd.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/segment.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/piezo.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/motor.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/led_ctrl.v" into library work
+WARNING:HDLCompiler:568 - "C:/xilinx_workspace/project/led_ctrl.v" Line 67: Constant value is truncated to fit in <25> bits.
+Analyzing Verilog file "C:/xilinx_workspace/project/dot.v" into library work
+Analyzing Verilog file "C:/xilinx_workspace/project/top.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/xilinx_workspace/project/top.v" Line 70: Port LOCKED is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/xilinx_workspace/project/top.v" Line 76: Port BUZZER is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/xilinx_workspace/project/top.v" Line 102: Port GAME_START is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/xilinx_workspace/project/top.v" Line 110: Size mismatch in connection of port <LAST_CLEAR_TIME>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/xilinx_workspace/project/top.v" Line 121: Size mismatch in connection of port <LAST_CLEAR_TIME>. Formal port size is 16-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKIN_PERIOD=83.333333333...
+Compiling module BUFG
+Compiling module PLL24X2
+Compiling module led_ctrl
+Compiling module dot
+Compiling module bin2seg
+Compiling module segment
+Compiling module textlcd
+Compiling module piezo
+Compiling module motor
+Compiling module top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 지정된 경로를 찾을 수 없습니다, "isim\top_isim_beh.exe.sim\libPortability.dll".
+Compiled 17 Verilog Units
+Built simulation executable C:/xilinx_workspace/project/top_isim_beh.exe
+Fuse Memory Usage: 34296 KB
+Fuse CPU Usage: 655 ms

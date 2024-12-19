@@ -1,0 +1,1096 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-ftg256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\xilinx_workspace\project\ipcore_dir\PLL24X2.v" into library work
+Parsing module <PLL24X2>.
+Analyzing Verilog file "C:\xilinx_workspace\project\bin2seg.v" into library work
+Parsing module <bin2seg>.
+Analyzing Verilog file "C:\xilinx_workspace\project\textlcd.v" into library work
+Parsing module <textlcd>.
+Analyzing Verilog file "C:\xilinx_workspace\project\segment.v" into library work
+Parsing module <segment>.
+Analyzing Verilog file "C:\xilinx_workspace\project\piezo.v" into library work
+Parsing module <piezo>.
+Analyzing Verilog file "C:\xilinx_workspace\project\motor.v" into library work
+Parsing module <motor>.
+Analyzing Verilog file "C:\xilinx_workspace\project\led_ctrl.v" into library work
+Parsing module <led_ctrl>.
+WARNING:HDLCompiler:568 - "C:\xilinx_workspace\project\led_ctrl.v" Line 67: Constant value is truncated to fit in <25> bits.
+Analyzing Verilog file "C:\xilinx_workspace\project\dot.v" into library work
+Parsing module <dot>.
+Analyzing Verilog file "C:\xilinx_workspace\project\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\xilinx_workspace\project\top.v" Line 70: Port LOCKED is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\xilinx_workspace\project\top.v" Line 76: Port BUZZER is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\xilinx_workspace\project\top.v" Line 102: Port GAME_START is not connected to this instance
+
+Elaborating module <top>.
+
+Elaborating module <PLL24X2>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=83.3333333333,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="2X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "C:\xilinx_workspace\project\ipcore_dir\PLL24X2.v" Line 129: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <led_ctrl>.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\led_ctrl.v" Line 83: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\led_ctrl.v" Line 99: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\led_ctrl.v" Line 157: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\led_ctrl.v" Line 171: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:1127 - "C:\xilinx_workspace\project\top.v" Line 84: Assignment to game_start ignored, since the identifier is never used
+
+Elaborating module <dot>.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\dot.v" Line 21: Result of 16-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <segment>.
+WARNING:HDLCompiler:1127 - "C:\xilinx_workspace\project\segment.v" Line 44: Assignment to reset_flag ignored, since the identifier is never used
+
+Elaborating module <bin2seg>.
+WARNING:HDLCompiler:189 - "C:\xilinx_workspace\project\top.v" Line 110: Size mismatch in connection of port <LAST_CLEAR_TIME>. Formal port size is 16-bit while actual signal size is 1-bit.
+
+Elaborating module <textlcd>.
+WARNING:HDLCompiler:872 - "C:\xilinx_workspace\project\textlcd.v" Line 23: Using initial value of line_1 since it is never assigned
+WARNING:HDLCompiler:634 - "C:\xilinx_workspace\project\textlcd.v" Line 19: Net <line_2[127]> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\xilinx_workspace\project\top.v" Line 121: Size mismatch in connection of port <LAST_CLEAR_TIME>. Formal port size is 16-bit while actual signal size is 1-bit.
+
+Elaborating module <piezo>.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\piezo.v" Line 65: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\piezo.v" Line 70: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\piezo.v" Line 102: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\piezo.v" Line 107: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:1127 - "C:\xilinx_workspace\project\piezo.v" Line 49: Assignment to prev_score ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\xilinx_workspace\project\piezo.v" Line 143: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <motor>.
+WARNING:HDLCompiler:634 - "C:\xilinx_workspace\project\top.v" Line 88: Net <easy> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\xilinx_workspace\project\top.v" Line 89: Net <normal> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\xilinx_workspace\project\top.v" Line 90: Net <hard> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\xilinx_workspace\project\top.v" Line 91: Net <vhard> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\xilinx_workspace\project\top.v" Line 102: Input port GAME_START is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\xilinx_workspace\project\top.v".
+WARNING:Xst:2898 - Port 'GAME_START', unconnected in block instance 'segment', is tied to GND.
+WARNING:Xst:647 - Input <EASY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <NORMAL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <HARD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <VHARD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\xilinx_workspace\project\top.v" line 70: Output port <LOCKED> of the instance <PLL24X2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx_workspace\project\top.v" line 76: Output port <BUZZER> of the instance <led_ctrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\xilinx_workspace\project\top.v" line 76: Output port <GAME_START> of the instance <led_ctrl> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <easy> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <normal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <hard> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <vhard> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <PLL24X2>.
+    Related source file is "C:\xilinx_workspace\project\ipcore_dir\PLL24X2.v".
+    Summary:
+	no macro.
+Unit <PLL24X2> synthesized.
+
+Synthesizing Unit <led_ctrl>.
+    Related source file is "C:\xilinx_workspace\project\led_ctrl.v".
+        STATE_START = 2'b00
+        STATE_ACTIVE = 2'b01
+        STATE_CLEAR = 2'b10
+    Register <BUZZER_CTRL> equivalent to <BUZZER> has been removed
+    Found 1-bit register for signal <button_pressed>.
+    Found 1-bit register for signal <GAME_ACTIVE>.
+    Found 1-bit register for signal <GAME_CLEAR>.
+    Found 1-bit register for signal <GAME_START>.
+    Found 1-bit register for signal <buzzer_active>.
+    Found 1-bit register for signal <BUZZER>.
+    Found 25-bit register for signal <LED_CHANGE_TIME>.
+    Found 25-bit register for signal <cnt>.
+    Found 25-bit register for signal <clk_random>.
+    Found 25-bit register for signal <buzzer_timer>.
+    Found 3-bit register for signal <lfsr>.
+    Found 2-bit register for signal <state>.
+    Found 3-bit register for signal <random_led>.
+    Found 16-bit register for signal <SCORE>.
+    Found 4-bit register for signal <DIP_STATE>.
+    Found 8-bit register for signal <regLED>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 25-bit adder for signal <cnt[24]_GND_6_o_add_16_OUT> created at line 83.
+    Found 25-bit adder for signal <clk_random[24]_GND_6_o_add_19_OUT> created at line 99.
+    Found 16-bit adder for signal <SCORE[15]_GND_6_o_add_33_OUT> created at line 157.
+    Found 25-bit adder for signal <buzzer_timer[24]_GND_6_o_add_47_OUT> created at line 171.
+    Found 8-bit shifter logical left for signal <GND_6_o_random_led[2]_shift_left_28_OUT> created at line 141
+    Found 1-bit 8-to-1 multiplexer for signal <random_led[2]_KEY_REVERSED[7]_Mux_31_o> created at line 145.
+    Found 25-bit comparator greater for signal <cnt[24]_LED_CHANGE_TIME[24]_LessThan_16_o> created at line 82
+    Found 25-bit comparator equal for signal <cnt[24]_LED_CHANGE_TIME[24]_equal_31_o> created at line 142
+    Found 25-bit comparator greater for signal <buzzer_timer[24]_PWR_6_o_LessThan_47_o> created at line 169
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 140 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <led_ctrl> synthesized.
+
+Synthesizing Unit <dot>.
+    Related source file is "C:\xilinx_workspace\project\dot.v".
+WARNING:Xst:647 - Input <SCORE<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <COL_counter>.
+    Found 4-bit register for signal <DOT_Data>.
+    Found 4-bit adder for signal <COL_counter[3]_GND_8_o_add_2_OUT> created at line 29.
+    Found 16x41-bit Read Only RAM for signal <_n0198>
+    Found 1-bit 10-to-1 multiplexer for signal <DOT_Data[3]_dot_raw_reg[6]_wide_mux_26_OUT<6>> created at line 35.
+    Found 1-bit 10-to-1 multiplexer for signal <DOT_Data[3]_dot_raw_reg[6]_wide_mux_26_OUT<4>> created at line 35.
+    Found 1-bit 10-to-1 multiplexer for signal <DOT_Data[3]_dot_raw_reg[6]_wide_mux_26_OUT<3>> created at line 35.
+    Found 1-bit 10-to-1 multiplexer for signal <DOT_Data[3]_dot_raw_reg[6]_wide_mux_26_OUT<2>> created at line 35.
+    Found 1-bit 10-to-1 multiplexer for signal <DOT_Data[3]_dot_raw_reg[6]_wide_mux_26_OUT<0>> created at line 35.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_col_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dot_raw_reg<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator greater for signal <COL_counter[3]_PWR_7_o_LessThan_2_o> created at line 28
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred  17 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  30 Multiplexer(s).
+Unit <dot> synthesized.
+
+Synthesizing Unit <segment>.
+    Related source file is "C:\xilinx_workspace\project\segment.v".
+WARNING:Xst:647 - Input <BUTTON_PRESSED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sec>.
+    Found 1-bit register for signal <prev_game_active>.
+    Found 32-bit register for signal <cnt_time0>.
+    Found 16-bit register for signal <regseg>.
+    Found 16-bit register for signal <LAST_CLEAR_TIME>.
+    Found 16-bit register for signal <cnt64k>.
+    Found 2-bit register for signal <cnt4>.
+    Found 32-bit adder for signal <cnt_time0[31]_GND_26_o_add_1_OUT> created at line 62.
+    Found 4-bit adder for signal <regseg[15]_GND_26_o_add_8_OUT> created at line 95.
+    Found 4-bit adder for signal <regseg[11]_GND_26_o_add_10_OUT> created at line 97.
+    Found 4-bit adder for signal <regseg[7]_GND_26_o_add_12_OUT> created at line 99.
+    Found 4-bit adder for signal <regseg[3]_GND_26_o_add_13_OUT> created at line 101.
+    Found 16-bit adder for signal <cnt64k[15]_GND_26_o_add_22_OUT> created at line 120.
+    Found 2-bit adder for signal <cnt4[1]_GND_26_o_add_27_OUT> created at line 131.
+    Found 4x4-bit Read Only RAM for signal <FND_COM>
+    Found 32-bit comparator greater for signal <cnt_time0[31]_GND_26_o_LessThan_1_o> created at line 61
+    Found 16-bit comparator greater for signal <cnt64k[15]_PWR_195_o_LessThan_22_o> created at line 119
+    Found 2-bit comparator greater for signal <cnt4[1]_PWR_195_o_LessThan_27_o> created at line 130
+    Summary:
+	inferred   1 RAM(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  84 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  28 Multiplexer(s).
+Unit <segment> synthesized.
+
+Synthesizing Unit <bin2seg>.
+    Related source file is "C:\xilinx_workspace\project\bin2seg.v".
+    Found 16x8-bit Read Only RAM for signal <seg_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <bin2seg> synthesized.
+
+Synthesizing Unit <textlcd>.
+    Related source file is "C:\xilinx_workspace\project\textlcd.v".
+WARNING:Xst:647 - Input <LAST_CLEAR_TIME<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'line_2<127:33>', unconnected in block 'textlcd', is tied to its initial value (01010100011010010110110101100101001000000101010001100001011010110110010101101110001110100010000).
+WARNING:Xst:2935 - Signal 'line_2<15:0>', unconnected in block 'textlcd', is tied to its initial value (0111001100100000).
+    Found 1-bit register for signal <LCD_EN>.
+    Found 11-bit register for signal <delay_lcdclk>.
+    Found 6-bit register for signal <count_lcd>.
+    Found 9-bit register for signal <set_data>.
+    Found 7-bit adder for signal <n0057[6:0]> created at line 30.
+    Found 7-bit adder for signal <n0059[6:0]> created at line 31.
+    Found 11-bit adder for signal <delay_lcdclk[10]_GND_28_o_add_7_OUT> created at line 52.
+    Found 6-bit adder for signal <count_lcd[5]_GND_28_o_add_11_OUT> created at line 58.
+    Found 11-bit comparator greater for signal <delay_lcdclk[10]_PWR_197_o_LessThan_7_o> created at line 51
+    Found 6-bit comparator greater for signal <count_lcd[5]_PWR_197_o_LessThan_11_o> created at line 57
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  23 Multiplexer(s).
+Unit <textlcd> synthesized.
+
+Synthesizing Unit <piezo>.
+    Related source file is "C:\xilinx_workspace\project\piezo.v".
+        reg_do = 16'b0010110110001011
+        reg_re = 16'b0010100010010100
+        reg_mi = 16'b0010010000100101
+        reg_sol = 16'b0001111001100110
+WARNING:Xst:647 - Input <SCORE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUZZER_CTRL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'start_music', unconnected in block 'piezo', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'clear_music', unconnected in block 'piezo', is tied to its initial value.
+    Found 1-bit register for signal <regBUZZER>.
+    Found 1-bit register for signal <game_clear_done>.
+    Found 1-bit register for signal <game_start_done>.
+    Found 25-bit register for signal <music_timer>.
+    Found 2-bit register for signal <music_index>.
+    Found 16-bit register for signal <buzzer_counter_max>.
+    Found 16-bit register for signal <buzzer_counter>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 25-bit adder for signal <music_timer[24]_GND_29_o_add_2_OUT> created at line 65.
+    Found 2-bit adder for signal <music_index[1]_GND_29_o_add_4_OUT> created at line 70.
+    Found 16-bit adder for signal <buzzer_counter[15]_GND_29_o_add_47_OUT> created at line 143.
+    Found 4x32-bit Read Only RAM for signal <_n0229>
+    Found 25-bit comparator greater for signal <music_timer[24]_PWR_198_o_LessThan_1_o> created at line 63
+    Found 2-bit comparator greater for signal <music_index[1]_PWR_198_o_LessThan_4_o> created at line 69
+    Found 16-bit comparator lessequal for signal <n0049> created at line 138
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  62 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <piezo> synthesized.
+
+Synthesizing Unit <motor>.
+    Related source file is "C:\xilinx_workspace\project\motor.v".
+    Found 1-bit register for signal <sw_on>.
+    Found 32-bit register for signal <cnt_motor>.
+    Found 4-bit register for signal <MOTOR_OUT>.
+    Found 32-bit adder for signal <cnt_motor[31]_GND_31_o_add_3_OUT> created at line 36.
+    Found 30x2-bit multiplier for signal <motor_speed[31]_PWR_199_o_MuLt_8_OUT> created at line 57.
+    Found 32-bit comparator greater for signal <cnt_motor[31]_motor_speed[31]_LessThan_3_o> created at line 35
+    Found 32-bit comparator equal for signal <cnt_motor[31]_motor_speed[31]_equal_14_o> created at line 57
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <motor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x41-bit single-port Read Only RAM                   : 1
+ 16x8-bit single-port Read Only RAM                    : 4
+ 4x32-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 30x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 20
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 3
+ 2-bit adder                                           : 2
+ 25-bit adder                                          : 4
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 5
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 2
+# Registers                                            : 38
+ 1-bit register                                        : 13
+ 11-bit register                                       : 1
+ 16-bit register                                       : 6
+ 2-bit register                                        : 2
+ 25-bit register                                       : 5
+ 3-bit register                                        : 2
+ 32-bit register                                       : 2
+ 4-bit register                                        : 4
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 17
+ 1-bit latch                                           : 17
+# Comparators                                          : 14
+ 11-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 2
+ 25-bit comparator equal                               : 1
+ 25-bit comparator greater                             : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 106
+ 1-bit 10-to-1 multiplexer                             : 5
+ 1-bit 2-to-1 multiplexer                              : 47
+ 1-bit 8-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 4
+ 25-bit 2-to-1 multiplexer                             : 5
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 21
+# Logic shifters                                       : 1
+ 8-bit shifter logical left                            : 1
+# FSMs                                                 : 2
+# Xors                                                 : 1
+ 1-bit xor5                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <LED_CHANGE_TIME_8> in Unit <led_ctrl> is equivalent to the following 3 FFs/Latches, which will be removed : <LED_CHANGE_TIME_10> <LED_CHANGE_TIME_13> <LED_CHANGE_TIME_24> 
+INFO:Xst:2261 - The FF/Latch <LED_CHANGE_TIME_11> in Unit <led_ctrl> is equivalent to the following 2 FFs/Latches, which will be removed : <LED_CHANGE_TIME_20> <LED_CHANGE_TIME_23> 
+INFO:Xst:2261 - The FF/Latch <LED_CHANGE_TIME_19> in Unit <led_ctrl> is equivalent to the following FF/Latch, which will be removed : <LED_CHANGE_TIME_22> 
+WARNING:Xst:1710 - FF/Latch <LAST_CLEAR_TIME_0> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DIP_STATE_3> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DIP_STATE_2> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DIP_STATE_1> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DIP_STATE_0> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_21> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_19> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_18> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_17> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_16> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_15> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_14> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_12> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_11> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_9> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_8> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_7> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_6> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_5> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_4> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_3> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_2> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_1> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LED_CHANGE_TIME_0> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_1> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_2> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_3> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_4> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_5> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_6> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_7> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_8> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_9> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_10> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_11> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_12> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_13> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_14> of sequential type is unconnected in block <segment>.
+WARNING:Xst:2677 - Node <LAST_CLEAR_TIME_15> of sequential type is unconnected in block <segment>.
+
+Synthesizing (advanced) Unit <bin2seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin_data>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_data>      |          |
+    -----------------------------------------------------------------------
+Unit <bin2seg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dot>.
+The following registers are absorbed into counter <COL_counter>: 1 register on signal <COL_counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0198> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 41-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <COL_counter>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <dot> synthesized (advanced).
+
+Synthesizing (advanced) Unit <led_ctrl>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <clk_random>: 1 register on signal <clk_random>.
+The following registers are absorbed into counter <buzzer_timer>: 1 register on signal <buzzer_timer>.
+The following registers are absorbed into counter <SCORE>: 1 register on signal <SCORE>.
+Unit <led_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <piezo>.
+The following registers are absorbed into counter <buzzer_counter>: 1 register on signal <buzzer_counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0229> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 32-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <music_index>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <piezo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <segment>.
+The following registers are absorbed into counter <cnt64k>: 1 register on signal <cnt64k>.
+The following registers are absorbed into counter <cnt4>: 1 register on signal <cnt4>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_FND_COM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt4>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <FND_COM>       |          |
+    -----------------------------------------------------------------------
+Unit <segment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <textlcd>.
+The following registers are absorbed into counter <delay_lcdclk>: 1 register on signal <delay_lcdclk>.
+The following registers are absorbed into counter <count_lcd>: 1 register on signal <count_lcd>.
+Unit <textlcd> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x41-bit single-port distributed Read Only RAM       : 1
+ 16x8-bit single-port distributed Read Only RAM        : 4
+ 4x32-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 19x2-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 10
+ 2-bit adder                                           : 1
+ 25-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 4
+ 7-bit adder                                           : 2
+# Counters                                             : 10
+ 11-bit up counter                                     : 1
+ 16-bit up counter                                     : 3
+ 2-bit up counter                                      : 1
+ 25-bit up counter                                     : 3
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 212
+ Flip-Flops                                            : 212
+# Comparators                                          : 14
+ 11-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 2
+ 25-bit comparator equal                               : 1
+ 25-bit comparator greater                             : 3
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 97
+ 1-bit 10-to-1 multiplexer                             : 5
+ 1-bit 2-to-1 multiplexer                              : 47
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 5
+ 2-bit 2-to-1 multiplexer                              : 3
+ 25-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 21
+# Logic shifters                                       : 1
+ 8-bit shifter logical left                            : 1
+# FSMs                                                 : 2
+# Xors                                                 : 1
+ 1-bit xor5                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DIP_STATE_3> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DIP_STATE_2> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DIP_STATE_1> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DIP_STATE_0> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_24> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_23> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_22> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_21> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_20> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_19> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_18> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_17> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_16> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_15> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_14> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_13> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_12> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_11> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_10> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_9> (without init value) has a constant value of 0 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_8> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_7> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_6> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_5> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_4> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_3> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_2> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_1> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED_CHANGE_TIME_0> (without init value) has a constant value of 1 in block <led_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LAST_CLEAR_TIME_0> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_1> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_2> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_3> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_4> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_5> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_6> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_7> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_8> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_9> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_10> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_11> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_12> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_13> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_14> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LAST_CLEAR_TIME_15> (without init value) has a constant value of 0 in block <segment>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0000  | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <led_ctrl/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:2677 - Node <clk_random_8> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_9> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_10> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_11> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_12> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_13> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_14> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_15> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_16> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_17> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_18> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_19> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_20> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_21> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_22> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_23> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:2677 - Node <clk_random_24> of sequential type is unconnected in block <led_ctrl>.
+WARNING:Xst:1710 - FF/Latch <piezo/buzzer_counter_max_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <piezo/buzzer_counter_max_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <piezo/buzzer_counter_max_12> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <piezo/buzzer_counter_max_9> <piezo/buzzer_counter_max_6> 
+INFO:Xst:2261 - The FF/Latch <piezo/buzzer_counter_max_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <piezo/buzzer_counter_max_3> 
+
+Optimizing unit <top> ...
+
+Optimizing unit <led_ctrl> ...
+
+Optimizing unit <dot> ...
+
+Optimizing unit <textlcd> ...
+
+Optimizing unit <motor> ...
+WARNING:Xst:2677 - Node <led_ctrl/BUZZER> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <led_ctrl/buzzer_active> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <led_ctrl/GAME_START> of sequential type is unconnected in block <top>.
+WARNING:Xst:1710 - FF/Latch <motor/cnt_motor_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <motor/cnt_motor_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <led_ctrl/SCORE_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <segment/cnt_time0_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <led_ctrl/GAME_CLEAR> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <led_ctrl/state_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_0> in Unit <top> is equivalent to the following 3 FFs/Latches, which will be removed : <led_ctrl/clk_random_0> <led_ctrl/cnt_0> <dot/COL_counter_0> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_1> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_1> <led_ctrl/cnt_1> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_2> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_2> <led_ctrl/cnt_2> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_3> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_3> <led_ctrl/cnt_3> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_4> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_4> <led_ctrl/cnt_4> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_5> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_5> <led_ctrl/cnt_5> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_6> <led_ctrl/cnt_6> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <led_ctrl/clk_random_7> <led_ctrl/cnt_7> 
+INFO:Xst:2261 - The FF/Latch <segment/cnt64k_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <led_ctrl/cnt_8> 
+INFO:Xst:2261 - The FF/Latch <led_ctrl/GAME_ACTIVE> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <led_ctrl/state_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <segment/prev_game_active> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <motor/sw_on> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 7.
+Latch dot/dot_raw_reg_6 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch dot/dot_raw_reg_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 240
+ Flip-Flops                                            : 240
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 903
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 86
+#      LUT2                        : 65
+#      LUT3                        : 57
+#      LUT4                        : 93
+#      LUT5                        : 91
+#      LUT6                        : 133
+#      MUXCY                       : 198
+#      MUXF7                       : 11
+#      VCC                         : 1
+#      XORCY                       : 158
+# FlipFlops/Latches                : 264
+#      FDC                         : 123
+#      FDCE                        : 104
+#      FDE                         : 8
+#      FDP                         : 2
+#      FDPE                        : 3
+#      LD                          : 24
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 72
+#      IBUF                        : 11
+#      IBUFG                       : 1
+#      OBUF                        : 60
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             240  out of  18224     1%  
+ Number of Slice LUTs:                  534  out of   9112     5%  
+    Number used as Logic:               534  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    546
+   Number with an unused Flip Flop:     306  out of    546    56%  
+   Number with an unused LUT:            12  out of    546     2%  
+   Number of fully used LUT-FF pairs:   228  out of    546    41%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          76
+ Number of bonded IOBs:                  72  out of    186    38%  
+    IOB Flip Flops/Latches:              24
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                               | Clock buffer(FF name)     | Load  |
+---------------------------------------------------------------------------+---------------------------+-------+
+clock_12MHz                                                                | DCM_SP:CLK2X              | 240   |
+dot/DOT_Data[3]_GND_9_o_Mux_37_o(dot/Mmux_DOT_Data[3]_GND_9_o_Mux_37_o11:O)| NONE(*)(dot/dot_raw_reg_5)| 24    |
+---------------------------------------------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 13.276ns (Maximum Frequency: 75.324MHz)
+   Minimum input arrival time before clock: 7.069ns
+   Maximum output required time after clock: 8.123ns
+   Maximum combinational path delay: 6.119ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_12MHz'
+  Clock period: 13.276ns (frequency: 75.324MHz)
+  Total number of paths / destination ports: 24254 / 355
+-------------------------------------------------------------------------
+Delay:               6.638ns (Levels of Logic = 4)
+  Source:            led_ctrl/buzzer_timer_16 (FF)
+  Destination:       led_ctrl/buzzer_timer_24 (FF)
+  Source Clock:      clock_12MHz rising 2.0X
+  Destination Clock: clock_12MHz rising 2.0X
+
+  Data Path: led_ctrl/buzzer_timer_16 to led_ctrl/buzzer_timer_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   1.181  led_ctrl/buzzer_timer_16 (led_ctrl/buzzer_timer_16)
+     LUT6:I0->O            1   0.254   0.682  led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o21 (led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o2)
+     LUT6:I5->O            2   0.254   0.726  led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o22 (led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o21)
+     LUT6:I5->O            4   0.254   0.804  led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o23 (led_ctrl/buzzer_timer[24]_PWR_6_o_LessThan_47_o)
+     LUT6:I5->O           25   0.254   1.402  led_ctrl/_n0276_inv1 (led_ctrl/_n0276_inv)
+     FDCE:CE                   0.302          led_ctrl/buzzer_timer_0
+    ----------------------------------------
+    Total                      6.638ns (1.843ns logic, 4.795ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_12MHz'
+  Total number of paths / destination ports: 639 / 322
+-------------------------------------------------------------------------
+Offset:              7.069ns (Levels of Logic = 5)
+  Source:            KEY<3> (PAD)
+  Destination:       led_ctrl/buzzer_timer_24 (FF)
+  Destination Clock: clock_12MHz rising 2.0X
+
+  Data Path: KEY<3> to led_ctrl/buzzer_timer_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.181  KEY_3_IBUF (KEY_3_IBUF)
+     LUT6:I0->O            1   0.254   0.000  led_ctrl/Mmux_random_led[2]_KEY_REVERSED[7]_Mux_31_o_3 (led_ctrl/Mmux_random_led[2]_KEY_REVERSED[7]_Mux_31_o_3)
+     MUXF7:I1->O           8   0.175   0.944  led_ctrl/Mmux_random_led[2]_KEY_REVERSED[7]_Mux_31_o_2_f7 (led_ctrl/random_led[2]_KEY_REVERSED[7]_Mux_31_o)
+     LUT2:I1->O            3   0.254   0.994  led_ctrl/button_pressed_PWR_6_o_MUX_108_o1 (led_ctrl/button_pressed_PWR_6_o_MUX_108_o)
+     LUT6:I3->O           25   0.235   1.402  led_ctrl/_n0276_inv1 (led_ctrl/_n0276_inv)
+     FDCE:CE                   0.302          led_ctrl/buzzer_timer_0
+    ----------------------------------------
+    Total                      7.069ns (2.548ns logic, 4.521ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_12MHz'
+  Total number of paths / destination ports: 178 / 34
+-------------------------------------------------------------------------
+Offset:              8.123ns (Levels of Logic = 4)
+  Source:            segment/regseg_5 (FF)
+  Destination:       FND_DATA<5> (PAD)
+  Source Clock:      clock_12MHz rising 2.0X
+
+  Data Path: segment/regseg_5 to FND_DATA<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.525   1.345  segment/regseg_5 (segment/regseg_5)
+     LUT4:I0->O            1   0.254   1.112  segment/FND_DATA<5>3 (segment/FND_DATA<5>2)
+     LUT6:I1->O            1   0.254   0.790  segment/FND_DATA<5>4 (segment/FND_DATA<5>3)
+     LUT3:I1->O            1   0.250   0.681  segment/FND_DATA<5>5 (FND_DATA_5_OBUF)
+     OBUF:I->O                 2.912          FND_DATA_5_OBUF (FND_DATA<5>)
+    ----------------------------------------
+    Total                      8.123ns (4.195ns logic, 3.928ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot/DOT_Data[3]_GND_9_o_Mux_37_o'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            dot/dot_col_reg_9 (LATCH)
+  Destination:       DOT_COL<9> (PAD)
+  Source Clock:      dot/DOT_Data[3]_GND_9_o_Mux_37_o falling
+
+  Data Path: dot/dot_col_reg_9 to DOT_COL<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  dot/dot_col_reg_9 (dot/dot_col_reg_9)
+     OBUF:I->O                 2.912          DOT_COL_9_OBUF (DOT_COL<9>)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               6.119ns (Levels of Logic = 3)
+  Source:            Mode_Switch (PAD)
+  Destination:       LED<7> (PAD)
+
+  Data Path: Mode_Switch to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.328   0.944  Mode_Switch_IBUF (Mode_Switch_IBUF)
+     LUT2:I1->O            1   0.254   0.681  led_ctrl/Mmux_LED11 (LED_0_OBUF)
+     OBUF:I->O                 2.912          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      6.119ns (4.494ns logic, 1.625ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_12MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_12MHz    |    6.638|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dot/DOT_Data[3]_GND_9_o_Mux_37_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_12MHz    |         |         |    5.229|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.43 secs
+ 
+--> 
+
+Total memory usage is 4503068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  199 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

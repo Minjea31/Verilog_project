@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/xilinx_workspace/project/segment.xst" -ofn "C:/xilinx_workspace/project/segment.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p xc6slx16-ftg256-2 segment.ngc segment.ngd  
